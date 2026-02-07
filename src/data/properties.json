@@ -1,0 +1,72 @@
+[
+  {
+    "id": "casa-principal",
+    "title": "Tu Nuevo Hogar en Cali & Jamundí",
+    "location": "Cali / Jamundí, Valle del Cauca",
+    "description": "Diseño moderno, espacios amplios y la tranquilidad que mereces. Descubre esta exclusiva propiedad lista para habitar.",
+    "price": "A consultar",
+    "heroImage": "/uploads/1770487234628-cocina.jpg",
+    "features": [
+      {
+        "iconName": "Bed",
+        "label": "4 Habitaciones",
+        "desc": "Principal con vestier"
+      },
+      {
+        "iconName": "Bath",
+        "label": "3 Baños",
+        "desc": "Completos y modernos"
+      },
+      {
+        "iconName": "ChefHat",
+        "label": "Cocina Integral",
+        "desc": "Estilo americano"
+      },
+      {
+        "iconName": "Ruler",
+        "label": "250 m²",
+        "desc": "Área construida"
+      },
+      {
+        "iconName": "CarFront",
+        "label": "2 Parqueaderos",
+        "desc": "Cubiertos"
+      },
+      {
+        "iconName": "TreePine",
+        "label": "Zonas Verdes",
+        "desc": "Jardín privado"
+      }
+    ],
+    "images": [
+      "/uploads/1770487275041-saladoblealtura.jpg",
+      "/uploads/1770487991425-baño-social.webp",
+      "/uploads/1770488002691-escaleradetalle.webp",
+      "/uploads/1770488017642-fachada.jpeg",
+      "/uploads/1770488026375-piscina-noche.webp",
+      "/uploads/1770488030774-bañofrente.webp",
+      "/uploads/1770488047591-cocina_comedor.jpg"
+    ],
+    "mapUrl": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.423001437519!2d-76.57742549999999!3d3.244518100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e309b9d00e0e8e9%3A0xa7bf96cad6a70d6a!2sHontanar%20de%20las%20Mercedes!5e0!3m2!1ses-419!2sco!4v1770488965057!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "prop-1770485270714",
+    "title": "Tejar del rio chia",
+    "location": "chia",
+    "description": "hermosa propiedad",
+    "price": "620.000.000",
+    "heroImage": "/uploads/1770486508169-fachada.jpeg",
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-2a4d9f6fac90",
+      "https://images.unsplash.com/photo-1600596542815-2a4d9f6fac90",
+      ""
+    ],
+    "features": [
+      {
+        "iconName": "Bed",
+        "label": "3 habiataciones",
+        "desc": "hermosas habitacion"
+      }
+    ]
+  }
+]
