@@ -46,7 +46,7 @@ export default function ImageMosaic({ images }: ImageMosaicProps) {
         <section className="bg-white dark:bg-black relative">
             {/* Mobile Grid */}
             <div className="md:hidden">
-                <div className="relative h-[300px] w-full">
+                <div className="relative h-[400px] w-full">
                     <Image
                         src={mainImage}
                         alt="Principal"
@@ -56,9 +56,9 @@ export default function ImageMosaic({ images }: ImageMosaicProps) {
                     />
                     <button
                         onClick={() => setShowAll(true)}
-                        className="absolute bottom-4 right-4 bg-white/90 text-black px-3 py-1 rounded-full text-xs font-bold flex items-center shadow-lg"
+                        className="absolute bottom-4 right-4 bg-white/90 text-black px-4 py-2 rounded-lg text-sm font-bold flex items-center shadow-lg hover:bg-white transition"
                     >
-                        <Grid3X3 className="w-3 h-3 mr-1" /> Ver todas ({images.length})
+                        <Grid3X3 className="w-4 h-4 mr-2" /> Ver todas ({images.length})
                     </button>
                 </div>
             </div>
@@ -115,7 +115,7 @@ export default function ImageMosaic({ images }: ImageMosaicProps) {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-[60] flex items-center justify-center bg-black/95 backdrop-blur-sm"
+                        className="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-black/95 backdrop-blur-sm"
                         onClick={() => setSelectedIndex(null)}
                     >
                         {/* Close Button */}
@@ -140,8 +140,13 @@ export default function ImageMosaic({ images }: ImageMosaicProps) {
                             <ChevronRight size={48} />
                         </button>
 
-                        {/* Image Container */}
-                        <div className="relative w-full h-[85vh] max-w-7xl px-4 flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+                        {/* Counter */}
+                        <div className="absolute top-6 text-white text-sm font-mono bg-black/50 px-4 py-1.5 rounded-full z-[60]">
+                            {selectedIndex + 1} / {images.length}
+                        </div>
+
+                        {/* Main Image Container */}
+                        <div className="relative w-full h-[65vh] sm:h-[75vh] max-w-6xl px-4 flex items-center justify-center mt-12 sm:mt-8" onClick={(e) => e.stopPropagation()}>
                             <motion.div
                                 key={selectedIndex}
                                 initial={{ opacity: 0, x: 20 }}
@@ -160,9 +165,23 @@ export default function ImageMosaic({ images }: ImageMosaicProps) {
                             </motion.div>
                         </div>
 
-                        {/* Counter */}
-                        <div className="absolute bottom-6 text-white text-sm font-mono bg-black/50 px-3 py-1 rounded-full">
-                            {selectedIndex + 1} / {images.length}
+                        {/* Thumbnails Carousel */}
+                        <div className="relative w-full max-w-4xl mx-auto mt-4 sm:mt-6 px-4 shrink-0" onClick={(e) => e.stopPropagation()}>
+                            <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-4 justify-start sm:justify-center items-center [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                                {images.map((img, idx) => (
+                                    <div
+                                        key={idx}
+                                        onClick={() => setSelectedIndex(idx)}
+                                        className={`relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-lg overflow-hidden cursor-pointer transition-all duration-300 ${
+                                            idx === selectedIndex 
+                                            ? 'ring-2 ring-emerald-500 ring-offset-2 ring-offset-black opacity-100 scale-105' 
+                                            : 'opacity-40 hover:opacity-100'
+                                        }`}
+                                    >
+                                        <Image src={img} alt={`Thumb ${idx}`} fill className="object-cover" />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </motion.div>
                 )}

@@ -14,10 +14,10 @@ export default function Hero({ title, subtitle, backgroundImage }: HeroProps) {
         <section className="relative h-screen w-full overflow-hidden">
             {/* Background Image */}
             <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[20s] ease-linear scale-105"
                 style={{ backgroundImage: `url("${backgroundImage}")` }}
             >
-                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-black/30" />
             </div>
 
             <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white sm:px-6 lg:px-8">
@@ -25,7 +25,7 @@ export default function Hero({ title, subtitle, backgroundImage }: HeroProps) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+                    className="mb-6 text-5xl font-black tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl drop-shadow-sm"
                 >
                     {title}
                 </motion.h1>
@@ -34,7 +34,7 @@ export default function Hero({ title, subtitle, backgroundImage }: HeroProps) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="mb-8 max-w-2xl text-lg sm:text-xl md:text-2xl text-gray-200"
+                    className="mb-10 max-w-2xl text-lg sm:text-xl md:text-2xl text-gray-300 font-medium tracking-wide drop-shadow-sm"
                 >
                     {subtitle}
                 </motion.p>
@@ -43,18 +43,18 @@ export default function Hero({ title, subtitle, backgroundImage }: HeroProps) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+                    className="flex flex-col w-full sm:w-auto space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
                 >
                     <a
                         href="#contacto"
-                        className="group flex items-center justify-center rounded-full bg-emerald-500 px-8 py-3 text-lg font-bold text-white transition-all hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                        className="group flex w-full sm:w-auto items-center justify-center rounded-full bg-emerald-600 px-10 py-4 sm:py-5 text-lg font-black text-white transition-all hover:bg-emerald-500 hover:scale-[1.02] hover:shadow-[0_8px_30px_rgb(16,185,129,0.3)]"
                     >
                         Agendar Visita
-                        <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                        <ArrowRight className="ml-3 h-5 w-5 transition-transform group-hover:translate-x-1.5" />
                     </a>
                     <a
                         href="#detalles"
-                        className="flex items-center justify-center rounded-full border-2 border-white px-8 py-3 text-lg font-bold text-white transition-all hover:bg-white/10"
+                        className="flex w-full sm:w-auto items-center justify-center rounded-full border-2 border-white/80 backdrop-blur-md px-10 py-4 sm:py-5 text-lg font-bold text-white transition-all hover:bg-white hover:text-gray-900"
                     >
                         Ver Detalles
                     </a>

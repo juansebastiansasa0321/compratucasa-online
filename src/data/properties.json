@@ -1,20 +1,35 @@
 [
   {
     "id": "casa-principal",
-    "title": "Tu Nuevo Hogar en Cali & Jamundí",
-    "location": "Cali / Jamundí, Valle del Cauca",
-    "description": "Diseño moderno, espacios amplios y la tranquilidad que mereces. Descubre esta exclusiva propiedad lista para habitar.",
-    "price": "A consultar",
-    "heroImage": "/uploads/1770487234628-cocina.jpg",
+    "title": "Casa Nueva en Venta en Hontanar de las Mercedes, Jamundí",
+    "location": "Sector Hontanar de las Mercedes",
+    "city": "Jamundí",
+    "description": "Espectacular casa nueva en venta en el exclusivo sector de Hontanar de las Mercedes, Jamundí, Valle del Cauca. 430 m2, 3 habitaciones, 4 baños. Encuentra tu nuevo hogar en Cali & Jamundí.",
+    "price": "$ 1.090.000.000 COP",
+    "heroImage": "/uploads/1775487700564-1771722171899-wox8fk.webp",
+    "propertyType": "Casa",
+    "status": "Nuevo",
+    "bathrooms": 4,
+    "age": "Menos de 1 año",
+    "bedrooms": 3,
+    "parkingSpaces": 2,
+    "builtArea": 430,
+    "privateArea": 430,
+    "stratum": 5,
+    "adminFee": "$430.000",
+    "floorNumber": 3,
+    "totalFloors": "3",
+    "acceptsBarter": "¡Pregúntale!",
+    "remodeled": "No",
     "features": [
       {
         "iconName": "Bed",
-        "label": "4 Habitaciones",
+        "label": "3Habitaciones",
         "desc": "Principal con vestier"
       },
       {
         "iconName": "Bath",
-        "label": "3 Baños",
+        "label": "4 Baños",
         "desc": "Completos y modernos"
       },
       {
@@ -24,7 +39,7 @@
       },
       {
         "iconName": "Ruler",
-        "label": "250 m²",
+        "label": "430 m²",
         "desc": "Área construida"
       },
       {
@@ -47,26 +62,80 @@
       "/uploads/1770488030774-bañofrente.webp",
       "/uploads/1770488047591-cocina_comedor.jpg"
     ],
-    "mapUrl": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.423001437519!2d-76.57742549999999!3d3.244518100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e309b9d00e0e8e9%3A0xa7bf96cad6a70d6a!2sHontanar%20de%20las%20Mercedes!5e0!3m2!1ses-419!2sco!4v1770488965057!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    "mapUrl": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.423001437519!2d-76.57742549999999!3d3.244518100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e309b9d00e0e8e9%3A0xa7bf96cad6a70d6a!2sHontanar%20de%20las%20Mercedes!5e0!3m2!1ses-419!2sco!4v1770488965057!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "agentName": "Sebastian",
+    "agentPhone": "3147872392",
+    "featured": true
   },
   {
     "id": "prop-1770485270714",
-    "title": "Tejar del rio chia",
-    "location": "chia",
-    "description": "hermosa propiedad",
-    "price": "620.000.000",
-    "heroImage": "/uploads/1770486508169-fachada.jpeg",
+    "title": "Casa en Venta en Condominio Tejar del Río, Chía",
+    "location": "Condominio Tejar del Río",
+    "city": "Chia",
+    "description": "Espectacular casa en venta en el exclusivo Condominio Tejar del Río, Chía, Cundinamarca. 360 m2, 3 habitaciones, 3 baños y 2 parqueaderos. Excelente oportunidad para vivir o invertir cerca a Bogotá.",
+    "price": "$750.000.000 COP",
+    "heroImage": "/uploads/1774212320811-WhatsApp-Image-2025-03-15-at-2.14.33-PM-(2).jpeg",
+    "propertyType": "Casa",
+    "status": "Usado",
+    "bathrooms": 3,
+    "age": "1 a 8 años",
+    "bedrooms": 3,
+    "parkingSpaces": 2,
+    "builtArea": 360,
+    "privateArea": 360,
+    "stratum": 4,
+    "adminFee": "500000",
+    "floorNumber": 3,
+    "totalFloors": "¡Pregúntale!",
+    "acceptsBarter": "Sí",
+    "remodeled": "Sí",
     "images": [
-      "https://images.unsplash.com/photo-1600596542815-2a4d9f6fac90",
-      "https://images.unsplash.com/photo-1600596542815-2a4d9f6fac90",
-      ""
+      "/uploads/1774212110112-salachia1.jpeg",
+      "/uploads/1774212109877-comedorchia.jpeg",
+      "/uploads/1774212110132-salachiacuadro.jpeg",
+      "/uploads/1774212109823-cocinachia2.jpeg",
+      "/uploads/1774212109842-cocinachiatejardelrio.jpeg",
+      "/uploads/1774212109859-cocinatejartelriochia.jpeg",
+      "/uploads/1774212109897-comedorchia3.jpeg",
+      "/uploads/1774212110095-salachia.jpeg",
+      "/uploads/1774212110150-salacomedio.jpeg",
+      "/uploads/1774212109987-paitochia.jpeg",
+      "/uploads/1774212110038-patiochia.jpeg",
+      "/uploads/1774212109913-escaleraschia.jpeg",
+      "/uploads/1774212109932-habitacion3pisochia.jpeg",
+      "/uploads/1774212109970-habitacionpaola.jpeg",
+      "/uploads/1774212109952-habitacionchia.jpeg",
+      "/uploads/1774212110011-paolahabitacion.jpeg",
+      "/uploads/1774212110077-piscinachia.jpeg",
+      "/uploads/1774212110173-tenischia2.jpeg",
+      "/uploads/1774212110192-terraza.jpeg",
+      "/uploads/1774212110226-terrazachia.jpeg",
+      "/uploads/1774212308812-bañochia2piso.jpeg",
+      "/uploads/1774212308839-bañochialavamanos.jpeg",
+      "/uploads/1774212308867-bañopaola.jpeg",
+      "/uploads/1774212308894-bañorsegundopisochia.jpeg",
+      "/uploads/1774212308935-bañoslavamanos3.jpeg",
+      "/uploads/1774212308961-bañosocilachia.jpeg"
     ],
     "features": [
       {
         "iconName": "Bed",
-        "label": "3 habiataciones",
-        "desc": "hermosas habitacion"
+        "label": "3 Habitaciones",
+        "desc": "Hermosas habitaciones"
+      },
+      {
+        "iconName": "Bath",
+        "label": "3",
+        "desc": "Baños"
+      },
+      {
+        "iconName": "CarFront",
+        "label": "Parqueaderos",
+        "desc": "2"
       }
-    ]
+    ],
+    "agentName": "lina",
+    "agentPhone": "3105753752",
+    "mapUrl": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.46305033981005!2d-74.0603400933309!3d4.87098221895542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4079004fb2c575%3A0xdeb02d3db88cca4b!2sConjunto%20Tejar%20del%20Rio!5e0!3m2!1ses-419!2sco!4v1775488002374!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 ]

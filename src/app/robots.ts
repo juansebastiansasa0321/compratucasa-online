@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/dashboard/',
         },
-        sitemap: 'https://tudominio.com/sitemap.xml',
+        sitemap: 'https://compratucasa.co/sitemap.xml',
     }
 }

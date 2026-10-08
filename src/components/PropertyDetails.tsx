@@ -1,44 +1,42 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { PropertyFeature, iconMap } from "@/data/properties";
+import { Property } from "@/data/properties";
 
 interface PropertyDetailsProps {
-    features: PropertyFeature[];
+    property: Property;
 }
 
-export default function PropertyDetails({ features }: PropertyDetailsProps) {
-    return (
-        <section id="detalles" className="py-20 bg-gray-50 dark:bg-gray-900">
-            <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold mb-4">Detalles de la Propiedad</h2>
-                    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                        Cada rincón ha sido diseñado pensando en tu comodidad y la de tu familia.
-                        Acabados de lujo y espacios optimizados.
-                    </p>
-                </div>
+export default function PropertyDetails({ property }: PropertyDetailsProps) {
+    const details = [
+        { label: "Tipo de Inmueble", value: property.propertyType, fallback: "No especificado" },
+        { label: "Estado", value: property.status, fallback: "Usado" },
+        { label: "Habitaciones", value: property.bedrooms, fallback: "0" },
+        { label: "Baños", value: property.bathrooms, fallback: "0" },
+        { label: "Parqueaderos", value: property.parkingSpaces, fallback: "0" },
+        { label: "Antigüedad", value: property.age, fallback: "No especificado" },
+        { label: "Área Construida", value: property.builtArea ? `${property.builtArea} m2` : undefined, fallback: "0 m2" },
+        { label: "Área Privada", value: property.privateArea ? `${property.privateArea} m2` : undefined, fallback: "0 m2" },
+        { label: "Estrato", value: property.stratum, fallback: "No especificado" },
+        { label: "Administración", value: property.adminFee, fallback: "$ 0" },
+        { label: "Piso N°", value: property.floorNumber, fallback: "0" },
+        { label: "Cantidad de Pisos", value: property.totalFloors, fallback: "1" },
+        { label: "Acepta permuta", value: property.acceptsBarter, fallback: "No" },
+        { label: "Remodelado", value: property.remodeled, fallback: "No" },
+    ];
 
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                    {features.map((feature, index) => {
-                        const Icon = iconMap[feature.iconName] || iconMap.Ruler;
-                        return (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: index * 0.1 }}
-                                className="flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
-                            >
-                                <Icon className="w-10 h-10 text-emerald-500 mb-4" />
-                                <h3 className="text-xl font-semibold mb-2">{feature.label}</h3>
-                                <p className="text-sm text-gray-500 text-center">{feature.desc}</p>
-                            </motion.div>
-                        );
-                    })}
-                </div>
+    return (
+        <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm">
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 border-b pb-4">Detalles de la Propiedad</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 gap-x-4">
+                {details.map((detail, idx) => (
+                    <div key={idx} className="flex flex-col space-y-1">
+                        <span className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide">
+                            {detail.label}
+                        </span>
+                        <span className="text-sm sm:text-base font-bold text-gray-900 dark:text-white">
+                            {detail.value ?? detail.fallback}
+                        </span>
+                    </div>
+                ))}
             </div>
-        </section>
+        </div>
     );
 }

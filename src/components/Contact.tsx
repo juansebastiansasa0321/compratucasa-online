@@ -2,11 +2,12 @@
 
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { Button } from "./ui/Button";
+import { trackWhatsAppClick } from "@/lib/tracking";
 
 export default function Contact() {
     const handleWhatsApp = () => {
-        // Replace with actual number
-        window.open("https://wa.me/573000000000?text=Hola,%20estoy%20interesado%20en%20la%20casa...", "_blank");
+        trackWhatsAppClick();
+        window.open("https://wa.me/573147872392?text=Hola,%20estoy%20interesado%20en%20una%20propiedad...", "_blank");
     };
 
     return (
@@ -23,11 +24,11 @@ export default function Contact() {
                             <div className="space-y-6">
                                 <div className="flex items-center space-x-4">
                                     <Phone className="w-5 h-5 text-emerald-200" />
-                                    <span>+57 300 000 0000</span>
+                                    <a href="https://wa.me/573147872392" target="_blank" rel="noopener noreferrer" onClick={trackWhatsAppClick} className="hover:text-emerald-200 transition-colors">+57 314 7872392</a>
                                 </div>
                                 <div className="flex items-center space-x-4">
                                     <Mail className="w-5 h-5 text-emerald-200" />
-                                    <span>contacto@casacali.com</span>
+                                    <a href="mailto:juansebastiansasa@gmail.com" className="hover:text-emerald-200 transition-colors">juansebastiansasa@gmail.com</a>
                                 </div>
                                 <div className="flex items-center space-x-4">
                                     <MapPin className="w-5 h-5 text-emerald-200" />

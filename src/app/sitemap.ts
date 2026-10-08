@@ -3,10 +3,10 @@ import { getProperties } from '@/lib/actions'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const properties = await getProperties()
-    const baseUrl = 'https://tudominio.com' // Cambiar por dominio real
+    const baseUrl = 'https://compratucasa.co' // Cambiar por dominio real
 
     const propertyUrls = properties.map((prop) => ({
-        url: `${baseUrl}/?id=${prop.id}`,
+        url: `${baseUrl}/propiedad/${prop.id}`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.8,

@@ -1,21 +1,24 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Script from "next/script";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Venta de Casa Campestre en Cali y Jamundí | Oportunidad Exclusiva",
-  description: "Descubre tu nuevo hogar en el valle del Cauca. Casa campestre con diseño moderno, amplios espacios y ubicación privilegiada entre Cali y Jamundí. Venta directa.",
-  keywords: ["venta casa cali", "casa campestre jamundi", "propiedad lujo valle del cauca", "venta directa casa", "inmobiliaria cali"],
+  title: "Compra Tu Casa | Propiedades Exclusivas en Cali, Jamundí, Chía y Bogotá",
+  description: "Descubre tu nuevo hogar. Especialistas en venta de casas exclusivas en Jamundí (Hontanar de las Mercedes), Chía (Tejar del Río), Cali y Bogotá. Las mejores ubicaciones y valorización.",
+  keywords: ["venta propiedades colombia", "casas campestres chia", "apartamentos bogota", "inmobiliaria cali", "casa a la venta en jamundi", "hontanar de las mercedes jamundi", "tejar del rio chia", "comprar casa en chia"],
   openGraph: {
-    title: "Venta de Casa Campestre en Cali y Jamundí",
-    description: "Diseño moderno, espacios amplios y la tranquilidad que mereces. Mira los detalles y agenda tu visita.",
-    url: "https://tudominio.com",
-    siteName: "Venta Propiedad Cali-Jamundí",
+    title: "Venta de Propiedades Exclusivas en Colombia",
+    description: "Casas exclusivas, diseño moderno, espacios amplios y la tranquilidad que mereces. Encuentra propiedades en Chía, Jamundí, Bogotá y Cali.",
+    url: "https://compratucasa.co",
+    siteName: "Compra Tu Casa",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1600596542815-2a4d9f6fac90?q=80&w=2075&auto=format&fit=crop",
+        url: "https://compratucasa.co/uploads/1775487700564-1771722171899-wox8fk.webp",
         width: 1200,
         height: 630,
       },
@@ -25,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Oportunidad de Vivienda en Cali / Jamundí",
-    description: "Casa campestre moderna en venta. Conoce todos los detalles aquí.",
-    images: ["https://images.unsplash.com/photo-1600596542815-2a4d9f6fac90"],
+    title: "Compra Tu Casa | Oportunidades en Bogotá, Chía, Cali y Jamundí",
+    description: "Propiedades exclusivas en venta. Conoce todos los detalles aquí.",
+    images: ["https://compratucasa.co/uploads/1775487700564-1771722171899-wox8fk.webp"],
   },
 };
 
@@ -38,7 +41,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11083053229" strategy="afterInteractive" />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11083053229');
+          `}
+        </Script>
+        <FloatingWhatsApp />
+      </body>
     </html>
   );
 }
+
